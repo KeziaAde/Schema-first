@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://test.org/dsi.owl"
+         xmlns="http://test.org/dsi.owl#">
+
+<owl:Ontology rdf:about="http://test.org/dsi.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_for_day">
+  <rdfs:domain rdf:resource="#Company"/>
+  <rdfs:range rdf:resource="#Day"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_for_zip">
+  <rdfs:domain rdf:resource="#Company"/>
+  <rdfs:range rdf:resource="#Zip"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_for_city">
+  <rdfs:domain rdf:resource="#Company"/>
+  <rdfs:range rdf:resource="#City"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_for_dsi365">
+  <rdfs:domain rdf:resource="#Day"/>
+  <rdfs:range rdf:resource="#Dsi365"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_for_timestamp">
+  <rdfs:domain rdf:resource="#Day"/>
+  <rdfs:range rdf:resource="#Timestamp"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_for_start">
+  <rdfs:domain rdf:resource="#Day"/>
+  <rdfs:range rdf:resource="#StartTime"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_for_dsi">
+  <rdfs:domain rdf:resource="#Timestamp"/>
+  <rdfs:range rdf:resource="#Dsi"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Company">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Location">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Zip">
+  <rdfs:subClassOf rdf:resource="#Location"/>
+</owl:Class>
+
+<owl:Class rdf:about="#City">
+  <rdfs:subClassOf rdf:resource="#Location"/>
+</owl:Class>
+
+<owl:Class rdf:about="#PowerIndex">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dsi365">
+  <rdfs:subClassOf rdf:resource="#PowerIndex"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dsi">
+  <rdfs:subClassOf rdf:resource="#PowerIndex"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Timestamp">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Day">
+  <rdfs:subClassOf rdf:resource="#Timestamp"/>
+</owl:Class>
+
+<owl:Class rdf:about="#StartTime">
+  <rdfs:subClassOf rdf:resource="#Timestamp"/>
+</owl:Class>
+
+<owl:Class rdf:about="#EndTime">
+  <rdfs:subClassOf rdf:resource="#Timestamp"/>
+</owl:Class>
+
+
+</rdf:RDF>

@@ -1,0 +1,39 @@
+<mapping>
+    <mapping-element>
+        <domain-class>Company</domain-class>
+        <range-class>Day</range-class>  
+        <property>has_for_day</property>
+    </mapping-element>
+    <mapping-element>
+        <domain-class>Company</domain-class>
+        <range-class>Zip</range-class>  
+        <property>has_for_zip</property>
+    </mapping-element>
+    <mapping-element>
+        <domain-class>Company</domain-class>
+        <range-class>City</range-class>  
+        <property>has_for_city</property>
+    </mapping-element>
+    <mapping-element>
+        <domain-class>Day</domain-class>
+        <range-class>Dsi365</range-class>  
+        <property>has_for_dsi365</property>
+    </mapping-element>
+    <mapping-element>
+        <domain-class>Day</domain-class>
+        <range-class>Timestamp</range-class>  
+        <property>has_for_timestamp</property>
+    </mapping-element>
+    <mapping-element>
+        <domain-class>Day</domain-class>
+        <range-class>StartTime</range-class>  
+        <property>has_for_start</property>
+    </mapping-element>
+    <mapping-element>
+        <domain-class>Timestamp</domain-class>
+        <range-class>Dsi</range-class>  
+        <property>has_for_dsi</property>
+    </mapping-element> 
+    
+    <output>C:/Users/Kez/OneDrive/Documents/Jacobs/Yr 3/Thesis/Neo4j_Ontology/Strom</output>
+</mapping>

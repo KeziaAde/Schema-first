@@ -1,0 +1,8 @@
+timestamp Timestamp
+dsi Dsi
+zip Zip
+city City
+dsi365 Dsi365
+company Company
+day Day
+start StartTime
